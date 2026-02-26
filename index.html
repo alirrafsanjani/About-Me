@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Ali Rahmi Rafsanjani</title>
+
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #F0F2F5;
+            /* Background abu-abu muda di luar canvas */
+            color: #111827;
+        }
+
+        /* Custom style untuk efek tulisan "I'M ALI" */
+        .text-outline-yellow {
+            color: white;
+            /* Diubah menjadi putih agar shadow tidak tembus ke dalam teks */
+            -webkit-text-stroke: 2px #FFC700;
+            text-shadow: 6px 6px 0px rgba(255, 199, 0, 0.35);
+            /* Penyesuaian jarak shadow */
+            letter-spacing: 0.05em;
+        }
+
+        /* Custom style untuk card shadow agar mirip desain Figma */
+        .card-custom {
+            background-color: white;
+            border-radius: 8px;
+            /* Sedikit lebih tajam sesuai desain */
+            box-shadow: 0px 0px 15px rgba(255, 199, 0, 0.25);
+            /* Glow kuning halus */
+            border: 1px solid rgba(255, 199, 0, 0.2);
+            padding: 2.5rem;
+        }
+
+        /* Style list bullet */
+        ul.custom-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul.custom-list>li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        ul.custom-list>li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 1.5rem;
+            line-height: 1.2rem;
+            color: #111827;
+        }
+
+        ul.custom-list>li:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body class="antialiased">
+
+    <!-- Container Utama (Maksimal 1440px seperti artboard Figma) -->
+    <div class="max-w-[1440px] mx-auto bg-white min-h-screen relative flex flex-col shadow-2xl">
+
+        <!-- HEADER / HERO SECTION -->
+        <header class="flex flex-col-reverse lg:flex-row w-full mb-12">
+            <!-- Teks Kiri -->
+            <div class="w-full lg:w-[55%] px-8 py-12 lg:px-20 flex flex-col justify-center">
+                <h2 class="text-4xl lg:text-5xl font-extrabold tracking-tight mb-[-5px]">HI THERE!</h2>
+                <h1 class="text-[5rem] lg:text-[7rem] font-extrabold text-outline-yellow leading-none mb-6">I'M ALI</h1>
+
+                <div
+                    class="bg-[#FFC700] text-black font-extrabold text-sm md:text-base px-6 py-3 w-max shadow-sm mb-8 tracking-wide">
+                    CYBER SECURITY ENTHUSIAST / UI/UX DESIGNER
+                </div>
+
+                <p class="text-base md:text-lg leading-relaxed text-gray-700 text-justify">
+                    Halo! Saya adalah seorang mahasiswa Sistem Informasi yang memiliki ketertarikan mendalam di dunia
+                    Cyber Security dan Digital Forensics. Selain fokus mengeksplorasi keamanan siber, saya juga aktif
+                    mengembangkan solusi digital melalui UI/UX Design. Prinsip saya sederhana: "Continuous learning".
+                    Mari mengeksplorasi dunia teknologi dan belajar bersama saya.
+                </p>
+            </div>
+
+            <!-- Gambar Kanan -->
+            <div
+                class="w-full lg:w-[45%] bg-[#D9D9D9] min-h-[400px] lg:min-h-[600px] flex items-end justify-center pt-10">
+                <!-- Memastikan gambar proporsional dan menempel di bawah container abu-abu -->
+                <img src="./images/v3_3.png" alt="Ali Rahmi Rafsanjani"
+                    class="max-w-full h-auto object-contain max-h-[800px]"
+                    onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'">
+            </div>
+        </header>
+
+        <!-- KONTEN UTAMA -->
+        <main class="flex-grow px-8 lg:px-20 pb-20">
+
+            <!-- TITLE CARD -->
+            <div class="card-custom mb-10 text-left">
+                <h2 class="text-3xl font-extrabold mb-1">ALI RAHMI RAFSANJANI</h2>
+                <p class="text-xl font-medium italic text-gray-700">
+                    Information Systems Student | Cyber Security Enthusiast
+                </p>
+            </div>
+
+            <!-- GRID 2 KOLOM -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+
+                <!-- KOLOM KIRI -->
+                <div class="flex flex-col gap-10">
+
+                    <!-- Educational Background -->
+                    <div class="card-custom">
+                        <h3 class="text-2xl font-extrabold mb-6">EDUCATIONAL BACKGROUND</h3>
+                        <ul class="custom-list">
+                            <li>
+                                <h4 class="text-xl font-bold">Alma Ata University | ( 2024 - Now )</h4>
+                                <p class="text-gray-600 italic text-base mt-1">Information System | GPA 3.96</p>
+                            </li>
+                            <li>
+                                <h4 class="text-xl font-bold">MAN 4 Pandeglang | ( 2020 - 2023 )</h4>
+                                <p class="text-gray-600 italic text-base mt-1">Science | Average 88.7</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience -->
+                    <div class="card-custom">
+                        <h3 class="text-2xl font-extrabold mb-6">EXPERIENCE</h3>
+                        <ul class="custom-list">
+                            <li>
+                                <h4 class="text-xl font-bold">Chairperson of HIMSI</h4>
+                                <p class="text-gray-600 italic text-base mt-1">Chairperson of the student association
+                                    for the 2026 term</p>
+                            </li>
+                            <li>
+                                <h4 class="text-xl font-bold">Deputy Chairperson of HIMSI</h4>
+                                <p class="text-gray-600 italic text-base mt-1">Deputy chairperson of the student
+                                    association for the 2025 term</p>
+                            </li>
+                            <li>
+                                <h4 class="text-xl font-bold">Chairperson of PMR MAN 4 Pandeglang</h4>
+                                <p class="text-gray-600 italic text-base mt-1">Chairperson of the Red Cross Organization
+                                    of MAN 4 Pdg for the 2023 term</p>
+                            </li>
+                            <li>
+                                <h4 class="text-xl font-bold">General Secretary of SISPALA Giri Raksa</h4>
+                                <p class="text-gray-600 italic text-base mt-1">General Secretary at SISPALA Giri Raksa
+                                    at MAN 4 Pandeglang for the 2023 term</p>
+                            </li>
+                            <li>
+                                <h4 class="text-xl font-bold">Division Coordinator at SISPALA Giri Raksa</h4>
+                                <p class="text-gray-600 italic text-base mt-1">Forest Mountain coordinator at Sispala
+                                    Giri Raksa MAN 4 Pandeglang</p>
+                            </li>
+                            <li>
+                                <h4 class="text-xl font-bold">Division Coordinator at OSIS MAN 4 Pdg</h4>
+                                <p class="text-gray-600 italic text-base mt-1">Editorial department coordinator at OSIS
+                                    MAN 4 Pandeglang for the 2022 term</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- KOLOM KANAN -->
+                <div class="flex flex-col gap-10">
+
+                    <!-- Skills -->
+                    <div class="card-custom">
+                        <h3 class="text-2xl font-extrabold mb-6">SKILLS</h3>
+                        <ul class="custom-list">
+                            <li>
+                                <h4 class="text-xl font-bold mb-2">Soft Skill :</h4>
+                                <ul class="list-none pl-4 text-base text-gray-700 space-y-1 italic">
+                                    <li>Problem Solving</li>
+                                    <li>Critical Thinking</li>
+                                    <li>Teamwork and Colaboration</li>
+                                    <li>Public Speaking</li>
+                                </ul>
+                            </li>
+                            <li class="mt-6">
+                                <h4 class="text-xl font-bold mb-2">Hard Skill :</h4>
+                                <ul class="list-none pl-4 text-base text-gray-700 space-y-1 italic">
+                                    <li>UI/UX Design & cyber security (Interest)</li>
+                                    <li>Microsoft Office</li>
+                                    <li>Adobe Photoshop</li>
+                                    <li>English (intermediate level)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Figma Project -->
+                    <div class="card-custom">
+                        <h3 class="text-2xl font-extrabold mb-6">FIGMA PROJECT</h3>
+                        <ul class="custom-list">
+                            <li>
+                                <h4 class="text-xl font-bold">
+                                    <a href="https://figma.com/proto/TudPHH0OodoWRVrspcHZQb/Prototype-Arahku?node-id=0-1&p=f&t=pI5sllVXaQjJgKzb-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=35%3A136"
+                                        target="_blank" rel="noopener noreferrer"
+                                        class="hover:text-[#FFC700] hover:underline transition-colors duration-200">Arahku</a>
+                                </h4>
+                                <p class="text-gray-600 italic text-base mt-1">Mobile-based career guidance application
+                                </p>
+                            </li>
+                            <li>
+                                <h4 class="text-xl font-bold">
+                                    <a href="https://figma.com/proto/v7tTqQFlD1stTS0JC183rd/GoFour?node-id=116-8019&p=f&t=RMzIfVs1NNAaMMlv-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=116%3A8009&show-proto-sidebar=1"
+                                        target="_blank" rel="noopener noreferrer"
+                                        class="hover:text-[#FFC700] hover:underline transition-colors duration-200">GoFour</a>
+                                </h4>
+                                <p class="text-gray-600 italic text-base mt-1">Mobile-based task management application
+                                </p>
+                            </li>
+                            <li>
+                                <h4 class="text-xl font-bold">
+                                    <a href="https://www.figma.com/proto/gqjhe5u0u7ZZxkrQzTew9h/Untitled?t=pI5sllVXaQjJgKzb-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&node-id=0-1&starting-point-node-id=142%3A2"
+                                        target="_blank" rel="noopener noreferrer"
+                                        class="hover:text-[#FFC700] hover:underline transition-colors duration-200">TravelFun</a>
+                                </h4>
+                                <p class="text-gray-600 italic text-base mt-1">mobile-based travel information
+                                    application</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Mockup Images Box -->
+                    <div class="card-custom flex justify-center py-10">
+                        <div class="flex flex-row justify-center items-center gap-6 w-full">
+                            <a href="https://figma.com/proto/TudPHH0OodoWRVrspcHZQb/Prototype-Arahku?node-id=0-1&p=f&t=pI5sllVXaQjJgKzb-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=35%3A136"
+                                target="_blank" rel="noopener noreferrer"
+                                class="w-[30%] hover:scale-105 transition-transform duration-300">
+                                <img src="./images/v3_163.png" alt="Arahku Mockup" class="w-full object-contain"
+                                    onerror="this.src='https://placehold.co/300x600/eee/999?text=Arahku'">
+                            </a>
+                            <a href="https://www.figma.com/proto/gqjhe5u0u7ZZxkrQzTew9h/Untitled?t=pI5sllVXaQjJgKzb-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&node-id=0-1&starting-point-node-id=142%3A2"
+                                target="_blank" rel="noopener noreferrer"
+                                class="w-[30%] hover:scale-105 transition-transform duration-300">
+                                <img src="./images/v3_166.png" alt="TravelFun Mockup" class="w-full object-contain"
+                                    onerror="this.src='https://placehold.co/300x600/eee/999?text=TravelFun'">
+                            </a>
+                            <a href="https://figma.com/proto/v7tTqQFlD1stTS0JC183rd/GoFour?node-id=116-8019&p=f&t=RMzIfVs1NNAaMMlv-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=116%3A8009&show-proto-sidebar=1"
+                                target="_blank" rel="noopener noreferrer"
+                                class="w-[30%] hover:scale-105 transition-transform duration-300">
+                                <img src="./images/v3_175.png" alt="GoFour Mockup" class="w-full object-contain"
+                                    onerror="this.src='https://placehold.co/300x600/eee/999?text=GoFour'">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+        <!-- FOOTER / CONTACT SECTION -->
+        <footer class="w-full bg-[#FFC700] py-8 px-6 mt-auto">
+            <div
+                class="max-w-7xl mx-auto flex flex-col md:flex-row flex-wrap justify-center md:justify-evenly items-center gap-6 text-sm md:text-base font-extrabold text-black">
+
+                <a href="mailto:243100400@almaata.ac.id" class="flex items-center gap-2 hover:opacity-70 transition">
+                    <i class="ph-fill ph-envelope text-2xl"></i>
+                    <span>243100400@almaata.ac.id</span>
+                </a>
+
+                <a href="#" class="flex items-center gap-2 hover:opacity-70 transition">
+                    <i class="ph-fill ph-instagram-logo text-2xl"></i>
+                    <span>rrafsanjani.ar</span>
+                </a>
+
+                <a href="#" class="flex items-center gap-2 hover:opacity-70 transition">
+                    <i class="ph-fill ph-whatsapp-logo text-2xl"></i>
+                    <span>087767443733</span>
+                </a>
+
+                <a href="#" class="flex items-center gap-2 hover:opacity-70 transition">
+                    <i class="ph-fill ph-linkedin-logo text-2xl"></i>
+                    <span>Ali Rahmi Rafsanjani</span>
+                </a>
+
+                <a href="#" class="flex items-center gap-2 hover:opacity-70 transition">
+                    <i class="ph-fill ph-github-logo text-2xl"></i>
+                    <span>alirrafsanjani</span>
+                </a>
+
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
